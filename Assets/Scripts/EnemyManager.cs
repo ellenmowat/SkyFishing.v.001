@@ -8,7 +8,7 @@ public class EnemyManager : MonoBehaviour
     private float maxTimer;
     private Vector2 screenBounds;
 
-    public int spawnY = 0;
+    public int spawnX = 0;
     public Transform jellyfishEnemy;
     public string spawning = "no";
 
@@ -30,7 +30,7 @@ public class EnemyManager : MonoBehaviour
 
     private void Update()
     {
-        spawnY = Random.Range(-4, 4);
+        spawnX = Random.Range(-4, 4);
         //Debug.Log(spawnX);
         if (spawning == "no")
         {
@@ -45,7 +45,7 @@ public class EnemyManager : MonoBehaviour
             maxTimer = Random.Range(timerMin, timerMax);
             timer += 0.2f;
             yield return new WaitForSeconds(maxTimer);
-            Instantiate(jellyfishEnemy, new Vector2(spawnY, -18), jellyfishEnemy.rotation);
+            Instantiate(jellyfishEnemy, new Vector2(spawnX, -18), jellyfishEnemy.rotation);
             spawning = "no";
         }
     }

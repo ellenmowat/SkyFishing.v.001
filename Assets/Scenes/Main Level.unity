@@ -510,6 +510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
   speed: 2
+<<<<<<< HEAD
   FishCollected: 0
   totalFish: 0
   startPos: {fileID: 0}
@@ -529,6 +530,8 @@ MonoBehaviour:
   isReeling: 0
   isDiving: 0
 >>>>>>> parent of d293ecc... Revert "Diving Mechanics"
+=======
+>>>>>>> parent of a145bee... Merge branch 'master' of https://github.com/ellenmowat/SkyFishing.v.001
 --- !u!50 &556242324
 Rigidbody2D:
   serializedVersion: 4
@@ -1527,10 +1530,14 @@ Transform:
   - {fileID: 845859839}
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 10
 =======
   m_RootOrder: 13
 >>>>>>> parent of d293ecc... Revert "Diving Mechanics"
+=======
+  m_RootOrder: 9
+>>>>>>> parent of a145bee... Merge branch 'master' of https://github.com/ellenmowat/SkyFishing.v.001
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1841315504
 GameObject:
@@ -1652,55 +1659,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 883004193}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1939289189
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1939289191}
-  - component: {fileID: 1939289190}
-  m_Layer: 0
-  m_Name: Fish Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1939289190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939289189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1e778c40a03d1a4093b02b60dfed266, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnX: 0
-  fishCollect: {fileID: 5341562913238831761, guid: bbe50089a8d87294887261e21793c3e4,
-    type: 3}
-  spawning: no
-  timerMin: 3
-  timerMax: 10
---- !u!4 &1939289191
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939289189}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.07472661, y: -7.3949995, z: -323.00763}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1941011290
 GameObject:

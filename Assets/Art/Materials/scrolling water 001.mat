@@ -47,10 +47,14 @@ Material:
         m_Texture: {fileID: 2800000, guid: 6ae1086baaea00f4ba98a9b8fd2c867e, type: 3}
         m_Scale: {x: 1, y: 1}
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_Offset: {x: 0, y: 0.6114111}
 =======
         m_Offset: {x: 0, y: 0.87760353}
 >>>>>>> parent of d293ecc... Revert "Diving Mechanics"
+=======
+        m_Offset: {x: 0, y: 0.4850874}
+>>>>>>> parent of a145bee... Merge branch 'master' of https://github.com/ellenmowat/SkyFishing.v.001
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
