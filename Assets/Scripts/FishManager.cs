@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyManager : MonoBehaviour
+public class FishManager : MonoBehaviour
 {
     private float timer;
     private float maxTimer;
     private Vector2 screenBounds;
 
-    public int spawnY = 0;
-    public Transform jellyfishEnemy;
+    public int spawnX = 0;
+    public Transform fishCollect;
     public string spawning = "no";
 
-    public float timerMin = 5f;
-    public float timerMax = 12f;
+    public float timerMin = 3f;
+    public float timerMax = 10f;
 
 
     // Start is called before the first frame update
@@ -24,31 +24,28 @@ public class EnemyManager : MonoBehaviour
 
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
 
-        StartCoroutine("SpawnEnemyTimer");
+        StartCoroutine("SpawnFishTimer");
 
     }
 
     private void Update()
     {
-        spawnY = Random.Range(-4, 4);
+        spawnX = Random.Range(-4, 4);
         //Debug.Log(spawnX);
         if (spawning == "no")
         {
             spawning = "yes";
-            StartCoroutine(SpawnEnemyTimer());
+            StartCoroutine(SpawnFishTimer());
         }
     }
 
     //Timer for how long an enemy will spawn
-    IEnumerator SpawnEnemyTimer()
+    IEnumerator SpawnFishTimer()
     {
-            maxTimer = Random.Range(timerMin, timerMax);
-            timer += 0.2f;
-            yield return new WaitForSeconds(maxTimer);
-            Instantiate(jellyfishEnemy, new Vector2(spawnY, -18), jellyfishEnemy.rotation);
-            spawning = "no";
-        }
+        maxTimer = Random.Range(timerMin, timerMax);
+        timer += 0.5f;
+        yield return new WaitForSeconds(maxTimer);
+        Instantiate(fishCollect, new Vector2(spawnX, -18), fishCollect.rotation);
+        spawning = "no";
     }
-
-
-
+}
